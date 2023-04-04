@@ -1,6 +1,6 @@
 # ToolsLatex
 
-Se tienen las siguientes herramientas para poder usar latex de manera más hágil.
+Se tienen las siguientes herramientas para poder usar latex de manera ágil.
 
 * figurasFinal: El nombre de una imagen en el portapales y al ejecuar el archivo figs.sh se autocompleta el formato de latex.
 
