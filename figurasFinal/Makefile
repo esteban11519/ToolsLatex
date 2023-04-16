@@ -3,6 +3,13 @@ MAIN_JAVA=$(MAIN).java
 MAIN_CLASS=$(MAIN).class
 JAVA_FILES=$(wildcard ./Data/*.java)
 
+FIGURE_NAMES=figureNames.txt
+FIGURES=figures.txt
+# @ don't show the command
+
+$(FIGURES) : $(FIGURE_NAMES) $(MAIN_CLASS)
+	@java $(MAIN)
+
 # Compile
 $(MAIN_CLASS) : $(MAIN_JAVA) $(JAVA_FILES)
 	javac -Xlint $<
