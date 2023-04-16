@@ -1,6 +1,0 @@
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figs/nombreFigura.png}
-\caption{}
-\label{fig:nombreFigura}
-\end{figure}

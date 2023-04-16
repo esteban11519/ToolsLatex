@@ -1,7 +1,0 @@
-\begin{figure}[H]
-\centering
-\includegraphics[width=1\linewidth]{figs/amarillo_exp.png}
-\caption{}
-\label{fig:amarillo_exp}
-\end{figure}
-

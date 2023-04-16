@@ -21,6 +21,8 @@ public class Figure{
 	 Convert and path into name and extension file
 	 */
 	String pattern=".";
+	boolean isOnlyName=false;
+	int lengthArrayName=0;
 	
 	StringBuilder stringBuilder = new StringBuilder();
 
@@ -30,9 +32,15 @@ public class Figure{
     	// Separe name and extension
 	String[] arrAuxString=auxString.split(Pattern.quote(pattern));
 
+	lengthArrayName=arrAuxString.length-1;
+	
+	if(arrAuxString.length==1){
+	    lengthArrayName=arrAuxString.length;
+	    isOnlyName=true;
+	}
 	
 	// File name contains dots
-	for (int i=0;i<arrAuxString.length-1;i++) {
+	for (int i=0;i<lengthArrayName;i++) {
 	    stringBuilder.append(arrAuxString[i]);
 	    if (i>=arrAuxString.length-2) {
 		continue;
@@ -41,7 +49,15 @@ public class Figure{
 	}
 	
 	setName(stringBuilder.toString());
-	setExtension(arrAuxString[arrAuxString.length-1]);
+
+	if(isOnlyName){
+	    setExtension("png");
+	}
+	else{
+	    setExtension(arrAuxString[arrAuxString.length-1]);
+	}
+	
+	
  
 	return;
     }

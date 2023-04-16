@@ -1,4 +1,8 @@
-Símbolo	Nombre	Valor	Unidades
-V_{CC}	Tensión de suministro mínima – máxima	4,5 – 16	V
-V_{i}	Tensión de entrada	V_{CC}	V
-I_{o}	Corriente de salida máx	$\pm 200$	mA
+Color	Tiempo experimental [s]	Error absoluto [s]	Error relativo \% [s/s]
+Negro	4.55	0.0579999999999998	1.26
+Azul	4.41	0.198	4.30
+Cyan	4.42	0.188	4.08
+Amarillo	4.46	0.148	3.21
+Blanco	4.51	0.0979999999999999	2.13
+Magenta	4.29	0.318	6.90
+Rojo	13.83	-0.006000000000002	-0.04

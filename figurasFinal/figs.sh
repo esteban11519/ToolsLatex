@@ -1,4 +1,5 @@
 #! /bin/bash
-xclip -o -selection c > /opt/figurasFinal/nombreFiguras.txt
+xclip -o -selection c > /opt/figurasFinal/figureNames.txt
 cd /opt/figurasFinal
-java star | xclip -i -selection c
+gmake
+java Start | xclip -i -selection c
