@@ -1,7 +1,7 @@
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\linewidth]{figs/enunciado.png}
+\includegraphics[width=1\linewidth]{figs/amarillo_exp.png}
 \caption{}
-\label{fig:enunciado}
+\label{fig:amarillo_exp}
 \end{figure}
 

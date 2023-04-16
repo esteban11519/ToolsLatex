@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Data;
 
 import java.io.FileInputStream;
@@ -11,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
  * @author Esteban
  */
 public class reader {
@@ -28,30 +22,28 @@ public class reader {
     public ArrayList numbers(){
      
         try
-        {
-           reader=new Scanner(new FileInputStream(input));
-           while(reader.hasNextLine())
-           {
+	    {
+		reader=new Scanner(new FileInputStream(input));
+		while(reader.hasNextLine())
+		    {
 
-                datos=reader.nextLine().split(",");
-                
-                
-                
-               for (String dato : datos) {
-                 if(!dato.equals(""))
-                 {
-                     figs.add(dato.trim());
-                 }
-               }
+			datos=reader.nextLine().split(",");	        
+  
+			for (String dato : datos) {
+			    if(!dato.equals(""))
+				{
+				    figs.add(dato.trim());
+				}
+			}
                
 
-           }
-           reader.close();
-        }   
+		    }
+		reader.close();
+	    }   
         catch(FileNotFoundException error)
-        {
-            System.out.println("Àrchivo no encontrado");     
-        }
+	    {
+		System.out.println("Àrchivo no encontrado");     
+	    }
         return figs;
     }
     
@@ -59,22 +51,22 @@ public class reader {
     public void estruturaFigura(){
         formatoFigura="";
         try
-        {
-           reader=new Scanner(new FileInputStream(archivoEstructuraFigura));
-           while(reader.hasNextLine())
-           {
+	    {
+		reader=new Scanner(new FileInputStream(archivoEstructuraFigura));
+		while(reader.hasNextLine())
+		    {
 
-                formatoFigura+=reader.nextLine()+"\n";
+			formatoFigura+=reader.nextLine()+"\n";
                 
 
-           }
-           reader.close();
+		    }
+		reader.close();
            
-        }   
+	    }   
         catch(FileNotFoundException error)
-        {
-            System.out.println("Àrchivo no encontrado");     
-        }
+	    {
+		System.out.println("Àrchivo no encontrado");     
+	    }
     }
      
     
