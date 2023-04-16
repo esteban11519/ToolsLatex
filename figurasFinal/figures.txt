@@ -1,0 +1,7 @@
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{figs/OracionAlEspirituSanto.jpg}
+\caption{}
+\label{fig:OracionAlEspirituSanto}
+\end{figure}
+
